@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>सादर निमन्त्रणा</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .invitation-card {
+            width: 700px;
+            background: #fff;
+            border: 2px solid #e0e0e0;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+        }
+        .invitation-card::before, .invitation-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 20px;
+            background: #fff;
+        }
+        .invitation-card::before {
+            left: 0;
+            border-top: 2px solid #e0e0e0;
+        }
+        .invitation-card::after {
+            right: 0;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .header {
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 50px;
+            height: auto;
+        }
+        .header h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .invitation-title {
+            font-size: 36px;
+            color: #800000;
+            margin: 20px 0;
+        }
+        .details {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .flower {
+            width: 50px;
+            height: auto;
+            position: absolute;
+        }
+        .flower-left {
+            top: 20px;
+            left: 20px;
+        }
+        .flower-right {
+            top: 20px;
+            right: 20px;
+        }
+        .flower-bottom-left {
+            bottom: 20px;
+            left: 20px;
+        }
+        .flower-bottom-right {
+            bottom: 20px;
+            right: 20px;
+        }
+        .contact-info {
+            margin-top: 20px;
+            text-align: left;
+            font-size: 18px;
+        }
+        #contact {
+            text-align: center;
+            font-size: smaller;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="invitation-card">
+        <div class="header">
+            <img src="ganesha.png" alt="Ganesha">
+            <h1>श्री गणेशाय नमः</h1>
+        </div>
+        <div class="content">
+            <p class="invitation-title">सादर निमन्त्रणा</p>
+            <p> तपाईं <b>श्री अन्जनराज सापकोटा</b>  न्यायसेवा आयोगबाट लिइने जिल्ला न्यायाधीश परीक्षामा उत्तीर्ण भई जिल्ला न्यायाधीश पदमा नियुक्त हुनु भएकोमा हामी अत्यन्त हर्षित छौं। यस गौरवपूर्ण अवसरमा </p>
+            <h2 class="invitation-title">बधाई तथा शुभकामना प्रदान</h2>
+            <p> लघुकार्यक्रमको आयोजना गरिएको हुँदा तपाईको अनिवार्य  उपस्थितिको लागि सादर निमन्त्रणा गर्दछौं। </p>
+        </div>
+        <div class="footer">
+            <div class="contact-info">
+                <p>मिति: <span id="date"></span></br> 
+                    समय: <span id="time"></span></br>               
+                स्थान: <span id="location"></span></br>
+              
+                
+            </div>
+           <u>आयोजकः</u>  <br><span id="contact">संवैधानिक इजलास फैसला लेखन शाखासमेत</span></p> 
+        </div>
+        <img src="flower.png" alt="Flower" class="flower flower-left">
+        <img src="flower.png" alt="Flower" class="flower flower-right">
+        <img src="flower.png" alt="Flower" class="flower flower-bottom-left">
+        <img src="flower.png" alt="Flower" class="flower flower-bottom-right">
+    </div>
+
+    <script>
+        document.getElementById('date').textContent = '२०८१/०४/१०, गुरूबार';
+        document.getElementById('time').textContent = 'आपसि समझदारीद्वारा तय गरिनेछ';
+        document.getElementById('location').textContent = 'इजलास अधिकृत कक्ष(संवैधानिक), सर्वोच्च अदालत';
+        document.getElementById('contact').textContent = 'संवैधानिक इजलास फैसला लेखन शाखासमेत';
+    </script>
+
+</body>
+</html>
